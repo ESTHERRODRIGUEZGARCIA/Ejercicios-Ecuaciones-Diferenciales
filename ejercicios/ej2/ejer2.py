@@ -1,5 +1,5 @@
 import sympy
-
+sympy.init_printing(use_latex='mathjax')
 # Defino incognitas
 x = sympy.symbols('x')
 y = sympy.Function('y')
