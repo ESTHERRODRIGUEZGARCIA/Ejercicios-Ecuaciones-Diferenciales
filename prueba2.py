@@ -35,7 +35,7 @@ print("El resultado es: ")
 pprint(solucion3)
 
 #Ecuacion 4
-print("Ecuacion 3:")
+print("Ecuacion 4:")
 ed4= Eq(Derivative(f(x),x)*2*x-f(x),3*x**2)
 pprint(ed4)
 
