@@ -11,6 +11,7 @@ class Primero:
         self.x = x
         self.y = y
         x,y = symbols("x y")
+        f,g =map(Function,'fg')
 
     def ecuacion1(self, x, y):
 
