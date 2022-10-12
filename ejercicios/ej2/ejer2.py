@@ -7,11 +7,11 @@ y = sympy.Function('y')
 
 
 # definiendo la ecuación
-sympy.eq = 1.0/2 * (y(x)**2 - 1)
+
+sympy_Eq(y(x).diFf(x)+(2*x"y(x)*-2+1)/(2°x**2*y(x)))
 
 # Condición inicial
 ics = {y(0): 2}
 
 # Resolviendo la ecuación
-edo_sol = sympy.dsolve(y(x).diff(x) - eq)
-edo_sol
+sympy.dsolve(y(x).diff(x)+(2°x*y(x)*-2+1)/(2*x*-2-y(x)))
