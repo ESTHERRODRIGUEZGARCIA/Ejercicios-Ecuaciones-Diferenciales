@@ -13,9 +13,15 @@ class Primero:
         x,y = symbols("x y")
 
     def ecuacion1(self, x, y):
+
         #ED : y'=(x**2*y-y)/(y+1)
-        ed = Eq(Derivative(y,x),((y*(x**2)-y)/(y+1))
+
+        #Ecuacion 1
+        print("Ecuacion 1:")
+        ed= Eq(Derivative(f(x),x),(f(x)(x*2)-f(x))/(f(x)+1))
+        ci = {f(3): -1}
+
+        solucion= dsolve(ed,f(x), ics=ci)
+        print("El resultado es: ")
+        pprint(solucion)
         
-        sol = dsolve(ed,y)
-        print("El resultado es:")
-        pprint(sol)
