@@ -7,7 +7,7 @@ y = sympy.Function('y')
 
 
 # definiendo la ecuación
-eq = 1.0/2 * (y(x)**2 - 1)
+sympy.eq = 1.0/2 * (y(x)**2 - 1)
 
 # Condición inicial
 ics = {y(0): 2}
