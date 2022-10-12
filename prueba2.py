@@ -42,3 +42,14 @@ pprint(ed4)
 solucion4= dsolve(ed4,f(x))
 print("El resultado es: ")
 pprint(solucion4)
+
+#Ecuacion 1
+print("Ecuacion 1:")
+
+ed1= Eq(Derivative(f(x),x),(f(x)(x**2)-f(x))/(f(x)+1))
+pprint(ed1)
+ci = {f(3): -1}
+
+solucion1= dsolve(ed1,f(x), ics=ci)
+print("El resultado es: ")
+pprint(solucion1)
