@@ -18,10 +18,10 @@ class Primero:
 
         #Ecuacion 1
         print("Ecuacion 1:")
-        ed= Eq(Derivative(f(x),x),(f(x)(x*2)-f(x))/(f(x)+1))
-        ci = {f(3): -1}
+        ed= Eq(Derivative(y,x),(y(x*2)-y)/(y+1))
+        ci = {y(3): -1}
 
-        solucion= dsolve(ed,f(x), ics=ci)
+        solucion= dsolve(ed,y, ics=ci)
         print("El resultado es: ")
         pprint(solucion)
         
