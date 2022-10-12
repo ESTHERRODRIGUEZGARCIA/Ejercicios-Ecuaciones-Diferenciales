@@ -1,9 +1,8 @@
 # importando modulos necesarios
-%matplotlib inline
 
 import matplotlib.pyplot as plt
 import numpy as np
-import sympy 
+import sympy
 from scipy import integrate
 
 # imprimir con notación matemática.
@@ -17,3 +16,5 @@ y = sympy.Function('y')
 # expreso la ecuacion
 f = 6*x**2 - 3*x**2*(y(x))
 sympy.Eq(y(x).diff(x), f)
+
+print("")
