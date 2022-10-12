@@ -52,10 +52,10 @@ pprint(solucion5)
 
 # ecuación 1
 print("Ecuacion 1:")
-ed1= Eq(Derivative(f(x),x)*2*x-x,3*x**2)
-pprint(ed5)
+ed1= Eq(Derivative(f(x),x),((f(x)*x**2-f(x))/(f(x)+1)))
+pprint(ed1)
 ci = {f(3): -1}
 
-solucion5= dsolve(ed5,f(x), ics=ci)
+solucion1= dsolve(ed1,f(x), ics=ci)
 print("El resultado es: ")
-pprint(solucion5)
+pprint(solucion1)
