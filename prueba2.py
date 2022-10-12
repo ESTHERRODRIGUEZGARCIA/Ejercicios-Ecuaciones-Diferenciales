@@ -13,8 +13,6 @@ import matplotlib.pyplot as plt
 x,y = symbols('x,y')
 f,g = map(Function, 'fg')
 
-
-
 #Ecuacion 2
 print("Ecuacion 2:")
 ed2= Eq(Derivative(f(x),x)*sin(x),f(x)*log(f(x)))
@@ -47,8 +45,17 @@ pprint(solucion4)
 print("Ecuacion 5:")
 ed5= Eq(Derivative(f(x),x)*2*x-x,3*x**2)
 pprint(ed5)
+
+solucion5= dsolve(ed5,f(x))
+print("El resultado es: ")
+pprint(solucion5)
+
+# ecuación 1
+print("Ecuacion 1:")
+ed1= Eq(Derivative(f(x),x)*2*x-x,3*x**2)
+pprint(ed5)
 ci = {f(3): -1}
 
-solucion1= dsolve(ed5,f(x), ics=ci)
+solucion5= dsolve(ed5,f(x), ics=ci)
 print("El resultado es: ")
-pprint(solucion1)
+pprint(solucion5)
