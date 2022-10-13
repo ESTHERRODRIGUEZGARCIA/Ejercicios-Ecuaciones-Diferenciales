@@ -1,4 +1,4 @@
-# Ejercicios-Ecuaciones-Diferenciales
+# Ejercicios Ecuaciones Diferenciales en Python
 
 Enlace del repositorio: https://github.com/ESTHERRODRIGUEZGARCIA/Ejercicios-Ecuaciones-Diferenciales.git
 
