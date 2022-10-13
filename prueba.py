@@ -1,25 +1,33 @@
 # este me devuelve la gráfica
-
+from sympy import *
+import math
 import numpy as np
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 
+
+x,y = symbols('x,y')
+f,g = map(Function, 'fg')
+
+
 # function that returns dy/dt
-def model(y,t):
-    dydt = -y + 1.0
-    return dydt
 
-# initial condition
-y0 = 0
+ed4= Eq(Derivative(f(x),x)*2*x-(f(x)),3*x**2)
+pprint(ed4)
 
-# time points
-t = np.linspace(0,5)
 
-# solve ODE
-y = odeint(model,y0,t)
 
 # plot results
-plt.plot(t,y)
-plt.xlabel('time')
-plt.ylabel('y(t)')
+plt.plot(x,f(x))
+plt.xlabel('x')
+plt.ylabel('f(x)')
 plt.show()
+
+
+print("Ecuacion 4:")
+ed4= Eq(Derivative(f(x),x)*2*x-(f(x)),3*x**2)
+pprint(ed4)
+
+solucion4= dsolve(ed4,f(x))
+print("El resultado es: ")
+pprint(solucion4)
