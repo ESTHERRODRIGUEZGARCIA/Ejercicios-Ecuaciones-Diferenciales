@@ -62,7 +62,7 @@ class Ejers():
         f,g = map(Function, 'fg')
 
         #Ecuacion 5 que es la que nos quería poner en realidad javi profe
-        print("Ecuacion 5:")
+        print("Ecuacion 5 (otra de Javi):")
         ed5= Eq(Derivative(f(x),x)*2*x-x,3*x**2)
         pprint(ed5)
 
