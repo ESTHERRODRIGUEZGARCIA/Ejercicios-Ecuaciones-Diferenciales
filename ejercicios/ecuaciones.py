@@ -57,7 +57,7 @@ class Ejers():
         print("El resultado es: ")
         pprint(solucion4)
 
-    def ecuacion4():
+    def ecuacion5():
         x,y = symbols('x,y')
         f,g = map(Function, 'fg')
 
