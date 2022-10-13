@@ -1,14 +1,7 @@
 #importando funciones 
 from sympy import *
-import sympy
 import math
-from sympy.interactive import printing
-from IPython.display import display
-import scipy as sp
-from scipy.integrate import odeint
-from scipy.integrate import solve_ivp
-import numpy as np
-import matplotlib.pyplot as plt
+
 
 x,y = symbols('x,y')
 f,g = map(Function, 'fg')
