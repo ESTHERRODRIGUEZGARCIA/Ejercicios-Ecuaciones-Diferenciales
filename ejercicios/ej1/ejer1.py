@@ -1,10 +1,9 @@
-from sympy.interactive import printing
-printing.init_printing(use_latex=True)
+#importando funciones 
 from sympy import *
-import numpy as np
-import sympy as sp
+import sympy
 import math
-from sympy import init_printing
+import numpy as np
+import matplotlib.pyplot as plt
 
 class Primero:
     def __init__(self, x, y):
