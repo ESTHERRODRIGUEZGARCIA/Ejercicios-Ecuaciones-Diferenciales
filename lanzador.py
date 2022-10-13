@@ -1,5 +1,5 @@
 from ejercicios.ecuaciones import Ejers
-def run():
+def ejecutar():
     Ejers.ecuacion1
     Ejers.ecuacion2
     Ejers.ecuacion3
