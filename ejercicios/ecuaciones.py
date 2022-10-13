@@ -17,3 +17,18 @@ class EDO():
         solucion1= dsolve(ed1,f(x), ics=ci)
         print("El resultado es: ")
         pprint(solucion1)
+
+    def ecuacion2():
+        x,y = symbols('x,y')
+        f,g = map(Function, 'fg')
+        #Ecuacion 2
+        print("Ecuacion 2:")
+        ed2= Eq(Derivative(f(x),x)*sin(x),f(x)*log(f(x)))
+        pprint(ed2)
+        ci = {f(math.pi): math.e}
+
+        solucion2= dsolve(ed2,f(x), ics=ci)
+        print("El resultado es: ")
+        pprint(solucion2)
+
+    
