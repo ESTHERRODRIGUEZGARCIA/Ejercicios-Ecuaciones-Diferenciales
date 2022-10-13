@@ -20,7 +20,7 @@ pprint(solucion1)
 print("Ecuacion 2:")
 ed2= Eq(Derivative(f(x),x)*sin(x),f(x)*log(f(x)))
 pprint(ed2)
-ci = {f(math.pi): math.e}
+ci = {f(math.pi/2): math.e}
 
 solucion2= dsolve(ed2,f(x), ics=ci)
 print("El resultado es: ")
@@ -37,7 +37,7 @@ pprint(solucion3)
 
 #Ecuacion 4
 print("Ecuacion 4:")
-ed4= Eq(Derivative(f(x),x)*2*x-f(x),3*x**2)
+ed4= Eq((Derivative(f(x),x)*2*x)-(f(x),3*x**2))
 pprint(ed4)
 
 solucion4= dsolve(ed4,f(x))
