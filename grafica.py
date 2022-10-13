@@ -14,7 +14,7 @@ ed4= Eq(Derivative(f(x),x)*2*x-(f(x)),3*x**2)
 index_set = f(x)
 
 
-plt.plot(ed4, f(x))
+plt.plot(ed4, index_set)
 plt.xlabel('x')
 plt.ylabel('y')
 plt.show()
