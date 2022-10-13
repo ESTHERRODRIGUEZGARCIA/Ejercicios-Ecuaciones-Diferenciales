@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 class Primero:
     def __init__(self, x, y):
         self.x = x
-        self.y = y
-        x,y = symbols("x y")
-        f,g =map(Function,'fg')
+        self.f = f
+        x = symbols("x")
+        f =map(Function,'f')
 
     def ecuacion1(self, x, y):
 
@@ -24,4 +24,3 @@ class Primero:
         solucion= dsolve(ed,y, ics=ci)
         print("El resultado es: ")
         pprint(solucion)
-        

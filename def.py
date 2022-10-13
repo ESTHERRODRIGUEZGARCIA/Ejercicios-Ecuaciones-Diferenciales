@@ -1,10 +1,12 @@
+
 #importando funciones 
 from sympy import *
+import sympy
 import math
 
 
-x = symbols('x')
-f = map(Function, 'f')
+x,y = symbols('x,y')
+f,g = map(Function, 'fg')
 
 # ecuación 1
 print("Ecuacion 1:")
@@ -13,7 +15,7 @@ pprint(ed1)
 ci = {f(3): -1}
 
 solucion1= dsolve(ed1,f(x), ics=ci)
-print("El resultado para f(3)=-1 es: ")
+print("El resultado es: ")
 pprint(solucion1)
 
 #Ecuacion 2
@@ -37,7 +39,7 @@ pprint(solucion3)
 
 #Ecuacion 4
 print("Ecuacion 4:")
-ed4= Eq(Derivative(f(x),x)*2*x-(f(x)),3*x**2)
+ed4= Eq(Derivative(f(x),x)*2*x-f(x),3*x**2)
 pprint(ed4)
 
 solucion4= dsolve(ed4,f(x))
@@ -52,4 +54,3 @@ pprint(ed5)
 solucion5= dsolve(ed5,f(x))
 print("El resultado es: ")
 pprint(solucion5)
-
