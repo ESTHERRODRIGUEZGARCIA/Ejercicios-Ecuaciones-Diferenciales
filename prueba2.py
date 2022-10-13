@@ -37,7 +37,7 @@ pprint(solucion3)
 
 #Ecuacion 4
 print("Ecuacion 4:")
-ed4= Eq((Derivative(f(x),x)*2*x)-(f(x),3*x**2))
+ed4= Eq(Derivative(f(x),x)*2*x-(f(x)),3*x**2)
 pprint(ed4)
 
 solucion4= dsolve(ed4,f(x))
