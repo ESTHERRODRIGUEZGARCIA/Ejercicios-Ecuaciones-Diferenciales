@@ -3,7 +3,7 @@ from sympy import *
 import sympy
 import math
 
-class EDO():
+class Ejers():
     def ecuacion1():
         x,y = symbols('x,y')
         f,g = map(Function, 'fg')

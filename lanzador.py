@@ -1,8 +1,10 @@
-from ejercicios.ecuaciones import EDO
+from ejercicios.ecuaciones import Ejers
+def run():
+    Ejers.ecuacion1
+    Ejers.ecuacion2
+    Ejers.ecuacion3
+    Ejers.ecuacion4
+    Ejers.ecuacion5
 
-from ejercicios.ej1 import ejer1
-from ejercicios.ej2 import ejer2
-from ejercicios.ej3 import ejer3
-from ejercicios.ej4 import ejer4
 
 # def ejecutar(): para ver que ec hacer
