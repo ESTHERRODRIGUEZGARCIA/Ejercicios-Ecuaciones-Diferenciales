@@ -31,4 +31,15 @@ class EDO():
         print("El resultado es: ")
         pprint(solucion2)
 
-    
+    def ecuacion3():
+        x,y = symbols('x,y')
+        f,g = map(Function, 'fg')
+
+        #Ecuacion 3
+        print("Ecuacion 3:")
+        ed3= Eq(Derivative(f(x),x)-(f(x)/(x-2)),2*(x-2)**2)
+        pprint(ed3)
+
+        solucion3= dsolve(ed3,f(x))
+        print("El resultado es: ")
+        pprint(solucion3)
